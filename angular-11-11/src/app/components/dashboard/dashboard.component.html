@@ -1,0 +1,27 @@
+<table class="table ">
+    <br>
+    <div class="row ">
+        <div class="col mt-3">
+             <div class="table-responsive">
+                <table class="table table-hover">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>phone</th>
+                        <th>email</th>
+                        <th>country</th>
+                    </tr>
+                    <tr *ngFor="let user of currentUser">  
+                        <!-- ngFor เป็น syntex ของ angular  -->
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.phone }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.country }}</td>
+                    </tr>
+                 </table>
+             </div>
+        </div>
+    </div>
+                    
+  
